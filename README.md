@@ -1,9 +1,37 @@
 # Hybrid-Anime-Recommendation-System
-This repository contains a hybrid recommendation model (Content-Based and Collaborative-Based) for suggesting related animes to users that they might be more interested in. Collaborative filtering and content-based filtering are two popular approaches to recommendation systems. Collaborative filtering utilizes the past behaviors and preferences of users to make recommendations for items, while content-based filtering relies on the attributes of items to generate recommendations.
+Link to the web application: https://drive.google.com/file/d/1CeoNQnrLZ9lxVqzCaIdYlMLpvNCuPon3/view?usp=share_link
+
+## Starting the service
+
+Download the folder from the link, unzip it and follow the commands:
+
+        >cd streamlit-app-new
+
+        >pip install -r requirements.txt
+
+        >streamlit run main.py
+    
+The app will run on http://localhost:8501 
+
+### Home page
+![Screenshot](HomePage1.png)
+![Screenshot](HomePage2.png)
+![Screenshot](HomePage3.png)
+
+### Search page
+![Screenshot](Search1.png)
+![Screenshot](Content_based_results.png)
+
+### Login page
+![Screenshot](Login.png)
+![Screenshot](Colab_filt_results.png)
+
+
+Collaborative filtering and content-based filtering are two popular approaches to recommendation systems. Collaborative filtering utilizes the past behaviors and preferences of users to make recommendations for items, while content-based filtering relies on the attributes of items to generate recommendations.
 
 ![263296](https://user-images.githubusercontent.com/125176903/226091976-9842df10-2769-450a-965a-138fa2af6cb3.png)
 
-In our project, we have integrated data from Myanimelist API, at least with 20 million user data, and 24000 anime details. To make recommendations, we have used the latent factor method, which is a type of collaborative filtering algorithm.
+In our project, we have integrated data from Myanimelist API, atleast with 20 million user data and 24000 anime details. To make recommendations, we have used the latent factor method, which is a type of collaborative filtering algorithm.
 
 The latent factor method involves creating a matrix of users and items, where each cell represents the rating of a particular user for a particular item. This matrix is typically sparse, meaning that most of the cells are empty because most users have not rated most items.
 
